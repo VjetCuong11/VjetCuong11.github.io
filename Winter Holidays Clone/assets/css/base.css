@@ -1,0 +1,37 @@
+:root{
+    --primary-color--:#3fd0d4;
+}
+*{
+    box-sizing: inherit;
+}
+.grid-6{
+    width: 16.66667%;
+}
+.mt-20{
+    margin-top: 20px;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+@keyframes dropDown{
+    from{
+        opacity: 0;
+        transform: translateY(-15%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
