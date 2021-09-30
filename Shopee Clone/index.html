@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
     <link rel="icon" href="./assets/img/avatar/152227536_505713884158383_3072592597596900797_n (1).jpg" type="image/gif" sizes="16x16">
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
@@ -15,8 +17,8 @@
 <body>
     <div class="app">
         <header class="header">
-            <div class="grid">
-                <nav class="header__navbar">
+            <div class="grid wide">
+                <nav class="header__navbar hide-on-mobile-tablet">
                     <ul class="header__navbar-list">
                         <li class="header__navbar-item header__navbar-item--qr header__navbar-item--separate">
                             Vào cửa hàng trên trang web
@@ -140,10 +142,84 @@
                 </nav>
                 <!-- Header Search -->
                 <div class="header-with-search">
-                    <a href="#" class="header__logo">
+                    <div class="header-search-bar-wrap">
+                        <div class="header-bar-wrap">
+                            <label for="header-bar-checkbox" class="header-mobile-bar">
+                                <i class="fas fa-bars"></i>
+                            </label>
+                            <input hidden type="checkbox" id="header-bar-checkbox" class="header-bar-input">
+                            <label for="header-bar-checkbox" class="header-bar-overlay"></label>
+                            <div class="header-bar-list">
+                                <label for="header-bar-checkbox" class="header-bar-close">
+                                    <i class="fas fa-times"></i>
+                                </label>
+                                <div class="header-bar-item">
+                                    <a href="" class="header-bar-link">Vào cửa hàng</a>
+                                </div>
+                                <div class="header-bar-item">
+                                    <a href="" class="header-bar-link">Kết nối</a>
+                                </div>
+                                <div class="header-bar-item">
+                                    <a href="" class="header-bar-link">Trợ giúp</a>
+                                </div>
+                                <div class="header-bar-item">
+                                    <a href="" class="header-bar-link">Thông báo</a>
+                                </div>
+                                <div class="header-bar-item">
+                                    <a href="" class="header-bar-link">Đăng ký</a>
+                                </div>
+                                <div class="header-bar-item">
+                                    <a href="" class="header-bar-link">Đăng nhập</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-search-wrap">
+                            <input hidden type="checkbox" id="header-search-checkbox" class="header-search-input">                           
+                            <label for="header-search-checkbox" class="header-mobile-search">
+                                <i class="fas fa-search"></i>
+                            </label>
+                            <div class="header__search">
+                                <label for="header-search-checkbox" class="header-search-close">
+                                    <i class="fas fa-times"></i>
+                                </label>
+                                <div class="header__search-input-wrap">
+                                    <input  type="text" class="header__search-input" placeholder="Nhập vào để tìm kiếm sản phẩm">
+                                    <div class="header__search-input-history">
+                                        <p class="header__search-input-history-heading">Lịch sử tìm kiếm</p>
+                                        <ul class="header__search-input-history-list">
+                                            <li class="header__search-input-history-items">Kem dưỡng da</li>
+                                            <li class="header__search-input-history-items">bàn học gỗ giá rẻ</li>
+                                            <li class="header__search-input-history-items">Bình hoa mini</li>
+                                            <li class="header__search-input-history-items">sản phẩm đang có sale</li>
+                                            <li class="header__search-input-history-items">sách Luật Tâm Thức Ngô Sa Thạch</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="header__search-sup header__search-sup--option">
+                                    <div class="header__search--separate"></div>
+                                    <span class="header__search-sup-text">Trong shop</span>
+                                    <i class="fas fa-angle-down header__search-sup-icon"></i>
+                                    <ul class="header__search-list">
+                                        <li class="header__search-item">
+                                            Trong shop
+                                            <i class="fas fa-check check-size-s"></i>
+                                        </li>
+                                        <li class="header__search-item header__search-item-footer ">
+                                            Ngoài shop
+                                        
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="header__search-icon">
+                                    <i class="fas fa-search header__search-icon-in"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="header__logo hide-on-tablet">
                         <img src="http://storage.googleapis.com/ops-shopee-files-live/live/affiliate-blog/2019/05/logo-full-white.png" alt="" class="header__logo-img">                       
                     </a>
-                    <div class="header__search">
+                    <div class="header__search hide-on-mobile">
                         <div class="header__search-input-wrap">
                             <input  type="text" class="header__search-input" placeholder="Nhập vào để tìm kiếm sản phẩm">
                             <div class="header__search-input-history">
@@ -325,9 +401,23 @@
                     
                 </div>      
             </div>
+            <ul class="header__sort-bar">
+                <li class="header__sort-item header__sort-item--active">
+                    <a href="" class="header__sort-link">Liên quan</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Mới nhất</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Bán chạy</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Giá</a>
+                </li>
+            </ul>
         </header>
         <div class="app__container">
-            <div class="grid">
+            <div class="grid wide">
                 <div class="grid__row app__content">
                     <div class="grid__column-2">
                         <div class="cateory">
@@ -350,11 +440,35 @@
                                 <li class="cateory-items">
                                     <a href="" class="cateory-items__link">Đồ Gia Dụng</a>
                                 </li>
+                                <li class="cateory-items">
+                                    <a href="" class="cateory-items__link">Bình Hoa</a>
+                                </li>
+                                <li class="cateory-items">
+                                    <a href="" class="cateory-items__link">Bàn Ghế Gỗ</a>
+                                </li>
+                                <li class="cateory-items">
+                                    <a href="" class="cateory-items__link">Oto</a>
+                                </li>
+                                <li class="cateory-items">
+                                    <a href="" class="cateory-items__link">Nhà Đất</a>
+                                </li>
+                                <li class="cateory-items">
+                                    <a href="" class="cateory-items__link">Khẩu Trang Y Tế</a>
+                                </li>
+                                <li class="cateory-items">
+                                    <a href="" class="cateory-items__link">Cồn Sát Khuẩn</a>
+                                </li>
+                                <li class="cateory-items">
+                                    <a href="" class="cateory-items__link">Găng Tay</a>
+                                </li>
+                                <li class="cateory-items">
+                                    <a href="" class="cateory-items__link">Đồ Gia Dụng</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
                     <div class="grid__column-10">
-                        <div class="home-filter">
+                        <div class="home-filter hide-on-mobile-tablet">
                             <span class="home-filter__label">Sắp xếp theo</span>
                             <button class="btn home-filter__label--btn">Phổ biến</button>
                             <button class="btn home-filter__label--btn btn--primary">Mới nhất</button>
@@ -1629,7 +1743,7 @@
 
         </div>
         <footer class="footer">
-            <div class="grid">
+            <div class="grid wide">
                 <div class="grid__row footer__fence">
                     <div class="grid__column-2-4">
                         <h4 class="footer__heading">CHĂM SÓC KHÁCH HÀNG</h4>
