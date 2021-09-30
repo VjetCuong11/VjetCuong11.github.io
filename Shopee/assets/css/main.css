@@ -424,7 +424,7 @@
 }
 .header-bar-list{
     background-color: #f25220;
-    padding: 20px;
+    padding: 20px 0;
     z-index: 5;
     position: fixed;
     border-left: none;
