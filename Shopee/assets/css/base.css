@@ -110,33 +110,3 @@ html {
     background-color: #f53e2d;
     color: var(--white-color);  
 }
-/* pagination */
-.pagination{
-    list-style-type: none;
-    display: flex;
-    font-size:2rem;
-    justify-content: center;
-    margin: 40px 0;
-}
-.pagination-item{  
-    margin: 0 15px;  
-}
-.pagination-item__link{
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    min-width: 40px;
-    height: 30px;
-    text-decoration: none;
-    color: #a5a5a5;
-}
-
-.pagination-item--pick{
-    background-color: #ee4d2d;
-    color: #fff;
-    border-radius: 2px;
-}
-.pagination-item--pick:hover{
-    opacity: 0.9;
-
-}

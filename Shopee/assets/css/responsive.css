@@ -68,11 +68,27 @@
         width: 100%;
         border: 1px solid rgba(0,0,0, 0.1);
         height: 46px;
-        padding-right: 44px;
         transition: 0.2s;
         display: none;
     }
-    .header__search-sup{
-        right: 108px;
+    .pagination{
+        padding: 0;
+    }
+    .pagination-item{
+        margin: 0;
+    }
+    .pagination-item__link{
+        font-size: 1.6rem;
+        min-width: 36px;
+    }
+    .header__search-input-history{
+        width: 100%;
+        top: calc(100% + 14px);
+    }
+    .app__content{
+        margin: 0 4px;
+    }
+    .footer__fence{
+        margin: 0 4px;
     }
 }
