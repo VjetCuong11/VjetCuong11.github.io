@@ -92,9 +92,7 @@
     .container-btn{
         top: 25%;
     }
-    .container-player__item:hover .container-player__dsc {
-        transform: translateY(-175px);
-    }
+    
     @keyframes moveUp {
         0% {
             opacity: 0;

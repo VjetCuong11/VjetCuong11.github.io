@@ -1035,7 +1035,7 @@ opacity: 0;
     height: 536px;   
 }
 .container-player__item:hover .container-player__dsc{
-    transform: translateY(-169px);
+    transform: translateY(-100%);
 }
 .container-player__img{
     width: 100%;
