@@ -13,6 +13,24 @@
     position: fixed;
     box-shadow: 0 3px 13px 0 rgb(0 0 0 / 3%);
 }
+/* HEADER MOBILE AND TABLET */
+.header-mobile{
+    width: 100%;
+    height: 69px;
+    background-color: var(--primary-color--);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+.header-mobile__logo{
+    height: 36px;
+}
+.header-mobile__icon{
+    font-size: 2rem;
+    color: #fff;
+}
+
 .btn-remove{
     position: fixed;
     width: 60px;
@@ -629,7 +647,7 @@ opacity: 0;
 }
 }
 .banner-title-item{
-    margin-top: 70px;
+    margin-top: 44px;
 }
  .banner-title__top{
     font-family: 'satisfy',sans-serif;
@@ -794,7 +812,7 @@ opacity: 0;
     background-color: #c1dedf;
 }
 .container-title{
-    padding: 120px 47px 50px 47px;
+    padding: 120px 47px 40px 47px;
     margin: 0 110px;
     display: flex;
     flex-direction: column;
@@ -804,12 +822,14 @@ opacity: 0;
 }
 .container-title__main{
     font-size: 3.3rem;
+    line-height: 3.3rem;
     color: var(--primary-color--);
     font-family: 'satisfy',sans-serif;
-    margin-bottom: 40px;
+    margin-bottom: 16px;
 }
 .container-title__sub{
     font-size: 6.5rem;
+    line-height: 6.5rem;
     color: #212121;
     font-family: 'Poppins',sans-serif;
     font-weight: 600;
@@ -832,7 +852,7 @@ opacity: 0;
     position: absolute;
     width: 50px;
     height: 50px;
-    top: 39%;
+    top: 34%;
     left: 48%;
     transition: 0.3s;
 }
@@ -884,12 +904,13 @@ opacity: 0;
 .container-review-title__main{
     color: #fff;
     font-size: 6.5rem;
+    line-height: 6.5rem;
     font-weight: 600;
 }
 .container-review-title__sub{
     color: #fff;
     font-size: 1.7rem;
-    margin-top: 47px;
+    margin-top: 24px;
 }
 .container-review__list{
     display: flex;
@@ -915,11 +936,7 @@ opacity: 0;
     margin-bottom: 20px;
     transition: 0.2s;
 }
-.container-review__item:hover{
-    box-shadow: 5px 8px 13.92px 2.08px rgb(0 0 0 / 15%);
-    transform: translateY(-2px);
 
-}
 .container-review__item-img{
     border-radius: 50%;
     width: 107px;
