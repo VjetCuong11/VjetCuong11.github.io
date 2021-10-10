@@ -111,6 +111,9 @@
     .container-player__dsc{
         height: 220px;
     }
+    .container-review__item-body{
+        margin-bottom: 12px;
+    }
     
     @keyframes moveUp {
         0% {
