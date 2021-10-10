@@ -93,7 +93,7 @@
         top: 25%;
     }
     .container-player__item:hover .container-player__dsc{
-        transform: translateY(-110%);
+        transform: translateY(-100%);
     }
     .container-review__item{
         height: 300px;
@@ -107,6 +107,9 @@
     }
     .container-review{
         height: 720px;
+    }
+    .container-player__dsc{
+        height: 240px;
     }
     
     @keyframes moveUp {

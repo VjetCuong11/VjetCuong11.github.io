@@ -1046,7 +1046,7 @@ opacity: 0;
     position: absolute;
     background-color: var(--primary-color--);
     width: 100%;
-    height: 170px;
+    height: 176px;
     top: 100%;
     transition: 0.5s ease-out;
     padding: 26px;
