@@ -92,6 +92,22 @@
     .container-btn{
         top: 25%;
     }
+    .container-player__item:hover .container-player__dsc{
+        transform: translateY(-110%);
+    }
+    .container-review__item{
+        height: 300px;
+        padding: 34px 30px;
+        display: block;
+        text-align: center;
+    }
+    .container-review__item-img{
+        margin-right: 0;
+        margin-bottom: 4px;
+    }
+    .container-review{
+        height: 720px;
+    }
     
     @keyframes moveUp {
         0% {
