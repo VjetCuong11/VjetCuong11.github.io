@@ -1,0 +1,55 @@
+*{
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.fs-13{
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+}
+@keyframes dropDown {
+    from{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.border-wall{
+    width: 100%;
+    height: 0.5px;
+    border-bottom: 1px solid #f1f1f1;
+}
+.bgr-yellow{
+    background-color: rgb(255,210,5);
+}
+.bgr-pink{
+    background-color: rgb(247,101,112);
+}
+.bgr-violet{
+    background-color: rgb(186,113,218);
+}
+.bgr-gradient-yellow{
+    background: linear-gradient(to right, #ffd205 0%, #ff9b05 100%);
+}
+.bgr-gradient-pink{
+    background: linear-gradient(to right, #f76570 0%, #f78d65 100%);
+}
+.bgr-gradient-violet{
+    background: linear-gradient(to right, #ba71da 0%, #da717b 100%);
+}
