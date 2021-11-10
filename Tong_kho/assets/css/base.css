@@ -1,0 +1,13 @@
+*{
+    box-sizing: inherit;
+}
+:root{
+    --primary-color--: rgb(238, 129, 129) ;
+    --sup-color--: #ef4444 ;
+}
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
