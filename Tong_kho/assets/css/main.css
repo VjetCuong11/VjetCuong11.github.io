@@ -120,6 +120,7 @@
 .container-item__price1{
     color: #fff;
     font-weight: bold;
+    display: none;
 }
 .container-item__price1 > span {
     color: #fff;
@@ -132,6 +133,8 @@
     margin: 12px 0;
     color: #fff;
     font-weight: bold;
+    text-align: center;
+    font-size: 2rem;
     
 }
 .container-item__price2 > span {
@@ -142,6 +145,7 @@
     font-size: 1.6rem;
     color: #fff;
     font-weight: bold;
+    display: none;
 }
 .container-item__dsc > span {
     color: #fff;
