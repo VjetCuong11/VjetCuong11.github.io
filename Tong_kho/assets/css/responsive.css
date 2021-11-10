@@ -22,4 +22,10 @@
         font-size: 7rem;
         line-height: 7rem;
     }
+    .nav{
+        padding: 0 8px;
+    }
+    .footer{
+        padding: 40px 8px;
+    }
 }
